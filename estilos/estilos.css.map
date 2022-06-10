@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,IAAI;CACzB",
+    "mappings": "AAEA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,IAAI;CACzB;;ACJD,AAAA,GAAG,CAAA;EACC,gBAAgB,EAAE,SAAS;CAC9B",
     "sources": [
-        "../archivos Sass/estilos.scss"
+        "../archivos Sass/estilos.scss",
+        "../archivos Sass/_barraNavegacion.scss"
     ],
     "names": [],
     "file": "estilos.css"
