@@ -1,8 +1,12 @@
-// archivo principal para adjuntar el resto
+// archivo principal para adjuntar el resto de los SCSS
 
-body{ 
-    background-color: aqua;
-}
+// reinicio de navegador
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
 
 // archivos SCSS importados
 @import "barraNavegacion";
