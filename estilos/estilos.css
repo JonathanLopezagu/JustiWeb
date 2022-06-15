@@ -1,13 +1,16 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.container-fluid {
-  height: 90vh;
+/*
+// tamaño pantalla index, hay que cambiarlo.
+.container-fluid{
+    height: 90vh;
 }
-
+*/
 .encabezado {
   background-color: white;
   width: 100%;
@@ -91,6 +94,21 @@
   body .encabezado .barraNav .navBar-visible {
     left: 0;
   }
+}
+
+.indexUno {
+  height: 80vh;
+  background-color: aquamarine;
+}
+
+.indexDos {
+  height: 80vh;
+  background-color: antiquewhite;
+}
+
+.deportesUno {
+  height: 50vh;
+  background-color: aquamarine;
 }
 
 .footerGeneral {
