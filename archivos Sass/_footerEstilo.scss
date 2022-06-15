@@ -1,9 +1,37 @@
-/*
-.paginaPie{
-    background-color: bisque;
-    height: 15vh;
+.footerGeneral{
+    height: auto;
     width: 100%;
-    
-    
+    margin-top: 10px;
+    margin-bottom: 0px;
+    background-color:  #FDCEB9;
+    display: inline-flex;
+    justify-content: center;
+    align-content: space-around;
+    color: black;
+
+    .imagenesFooter{ 
+        text-align: center;
+        color: black;
+    }
+
+    .redLink{ 
+        text-decoration: none;
+        color: black;
+    }
+
+    .imgRedes {
+        margin-top: 1vw;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        width: 5vw;
+        height: 10vh;
+    }
+
+    .mapaSitio{
+        text-decoration: none;
+        color: black;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
 }
-*/
