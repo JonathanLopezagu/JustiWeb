@@ -9,6 +9,7 @@
     .barraNav {
         display: flex;
         justify-content: space-around;
+        width: 100%;
 
         // estilos del logo y texto "Justi´s p... "
         .logo {
@@ -40,7 +41,7 @@
         // Estilos barra nav
         .navBar {
             display: flex;
-            margin-right: 10vw;
+            //margin-right: 10vw;
 
             .nav-item {
                 list-style: none;

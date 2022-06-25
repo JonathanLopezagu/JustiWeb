@@ -1,10 +1,36 @@
-.indexUno{ 
-    height: 80vh;
-    background-color: aquamarine;
-    
+.container-fluid{
+    width: 100%;
+    margin-left: 1vw;
 }
 
-.indexDos{ 
+.indexUno {
     height: 80vh;
+    width: 100%;
     background-color: antiquewhite;
+}
+
+.indexDos {
+    height: 100vh;
+    width: 100%;
+    .cardFoto{
+        
+        background-color: red;
+    }
+
+    .cardInfo{
+        background-color: black;
+    }
+}
+
+.indexTres {
+    height: 80vh;
+    width: 100%;
+    background-color: coral;
+
+}
+
+.indexCuatro {
+    height: 80vh;
+    width: 100%;
+    background-color: aquamarine;
 }

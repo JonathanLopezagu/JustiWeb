@@ -1,20 +1,22 @@
-.footerGeneral{
+.footerGeneral {
     height: auto;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 0px;
-    background-color:  #FDCEB9;
+    /*
+    background: rgb(255, 88, 88);
+    background: radial-gradient(circle, rgba(255, 88, 88, 1) 0%, rgba(255, 200, 200, 1) 49%);*/
     display: inline-flex;
     justify-content: center;
     align-content: space-around;
     color: black;
 
-    .imagenesFooter{ 
+    .imagenesFooter {
         text-align: center;
         color: black;
     }
 
-    .redLink{ 
+    .redLink {
         text-decoration: none;
         color: black;
     }
@@ -28,7 +30,7 @@
         height: 10vh;
     }
 
-    .mapaSitio{
+    .mapaSitio {
         text-decoration: none;
         color: black;
         margin-left: 1vw;

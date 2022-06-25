@@ -1,5 +1,136 @@
+.deporteUno-titulo {
+    font-size: xx-large;
+    text-align: center;
+    justify-content: center;
+    height: 10vh;
+    margin-top: 1vh;
+}
 
-.deportesUno{
-    height: 50vh;
-    background-color: aquamarine;
-     }
+.secDeportes {
+    width: 100%;
+
+
+    .deportesUno {
+
+        height: 200vh;
+        width: 100%;
+        display: grid;
+        grid-template-areas: "foto foto foto2"
+            "foto foto foto3"
+            "foto4 foto5 foto6";
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3px;
+        
+
+        .foto1 {
+            grid-area: foto;
+
+        }
+
+        .foto2 {
+            grid-area: foto2;
+
+        }
+
+        .foto3 {
+            grid-area: foto3;
+
+        }
+
+        .foto4 {
+            grid-area: foto4;
+
+        }
+
+        .foto5 {
+            grid-area: foto5;
+
+        }
+
+        .foto6 {
+            grid-area: foto6;
+        }
+
+        .foto {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .deportesDos {
+
+        height: 150vh;
+        width: 100%;
+        display: grid;
+        grid-template-areas: "fotoDos fotoUno fotoUno"
+            "fotoTres fotoUno fotoUno"
+            "fotoCuatro fotoCinco fotoSeis";
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3px;
+
+        .foto1-dos {
+            grid-area: fotoUno;
+
+        }
+
+        .foto2-dos {
+            grid-area: fotoDos;
+
+        }
+
+        .foto3-dos {
+            grid-area: fotoTres;
+
+        }
+
+        .foto4-dos {
+            grid-area: fotoCuatro;
+
+        }
+
+        .foto5-dos {
+            grid-area: fotoCinco;
+
+        }
+
+        .foto6-dos {
+            grid-area: fotoSeis;
+
+        }
+
+        .foto {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .deportesTres{
+        width: 100%;
+        height: 75vh;
+        display: grid;
+        grid-template-areas: "uno dos";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 3px;
+        margin-bottom: 5vh;
+
+        .foto1-tres{
+            grid-area: uno;
+            
+        }
+        .foto2-tres{
+            grid-area: dos;
+            
+        }
+
+        .foto {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

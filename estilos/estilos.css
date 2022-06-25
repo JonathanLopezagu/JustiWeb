@@ -1,16 +1,9 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*
-// tamaño pantalla index, hay que cambiarlo.
-.container-fluid{
-    height: 90vh;
-}
-*/
 .encabezado {
   background-color: white;
   width: 100%;
@@ -21,6 +14,7 @@
 .encabezado .barraNav {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 .encabezado .barraNav .logo {
@@ -48,7 +42,6 @@
 
 .encabezado .barraNav .navBar {
   display: flex;
-  margin-right: 10vw;
 }
 
 .encabezado .barraNav .navBar .nav-item {
@@ -96,19 +89,157 @@
   }
 }
 
-.indexUno {
-  height: 80vh;
-  background-color: aquamarine;
+.container-fluid {
+  width: 100%;
+  margin-left: 1vw;
 }
 
-.indexDos {
+.indexUno {
   height: 80vh;
+  width: 100%;
   background-color: antiquewhite;
 }
 
-.deportesUno {
-  height: 50vh;
+.indexDos {
+  height: 100vh;
+  width: 100%;
+}
+
+.indexDos .cardFoto {
+  background-color: red;
+}
+
+.indexDos .cardInfo {
+  background-color: black;
+}
+
+.indexTres {
+  height: 80vh;
+  width: 100%;
+  background-color: coral;
+}
+
+.indexCuatro {
+  height: 80vh;
+  width: 100%;
   background-color: aquamarine;
+}
+
+.deporteUno-titulo {
+  font-size: xx-large;
+  text-align: center;
+  justify-content: center;
+  height: 10vh;
+  margin-top: 1vh;
+}
+
+.secDeportes {
+  width: 100%;
+}
+
+.secDeportes .deportesUno {
+  height: 200vh;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "foto foto foto2" "foto foto foto3" "foto4 foto5 foto6";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3px;
+}
+
+.secDeportes .deportesUno .foto1 {
+  grid-area: foto;
+}
+
+.secDeportes .deportesUno .foto2 {
+  grid-area: foto2;
+}
+
+.secDeportes .deportesUno .foto3 {
+  grid-area: foto3;
+}
+
+.secDeportes .deportesUno .foto4 {
+  grid-area: foto4;
+}
+
+.secDeportes .deportesUno .foto5 {
+  grid-area: foto5;
+}
+
+.secDeportes .deportesUno .foto6 {
+  grid-area: foto6;
+}
+
+.secDeportes .deportesUno .foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.secDeportes .deportesDos {
+  height: 150vh;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "fotoDos fotoUno fotoUno" "fotoTres fotoUno fotoUno" "fotoCuatro fotoCinco fotoSeis";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3px;
+}
+
+.secDeportes .deportesDos .foto1-dos {
+  grid-area: fotoUno;
+}
+
+.secDeportes .deportesDos .foto2-dos {
+  grid-area: fotoDos;
+}
+
+.secDeportes .deportesDos .foto3-dos {
+  grid-area: fotoTres;
+}
+
+.secDeportes .deportesDos .foto4-dos {
+  grid-area: fotoCuatro;
+}
+
+.secDeportes .deportesDos .foto5-dos {
+  grid-area: fotoCinco;
+}
+
+.secDeportes .deportesDos .foto6-dos {
+  grid-area: fotoSeis;
+}
+
+.secDeportes .deportesDos .foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.secDeportes .deportesTres {
+  width: 100%;
+  height: 75vh;
+  display: grid;
+  grid-template-areas: "uno dos";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 3px;
+  margin-bottom: 5vh;
+}
+
+.secDeportes .deportesTres .foto1-tres {
+  grid-area: uno;
+}
+
+.secDeportes .deportesTres .foto2-tres {
+  grid-area: dos;
+}
+
+.secDeportes .deportesTres .foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .footerGeneral {
@@ -116,7 +247,9 @@
   width: 100%;
   margin-top: 10px;
   margin-bottom: 0px;
-  background-color: #FDCEB9;
+  /*
+    background: rgb(255, 88, 88);
+    background: radial-gradient(circle, rgba(255, 88, 88, 1) 0%, rgba(255, 200, 200, 1) 49%);*/
   display: inline-flex;
   justify-content: center;
   align-content: space-around;
