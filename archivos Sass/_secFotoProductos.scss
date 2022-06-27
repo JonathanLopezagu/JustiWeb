@@ -1,0 +1,335 @@
+
+.body-productos{
+    margin-left: 0;
+
+    h2{
+        margin-top: 5vh;
+        text-align: center;
+        font-size:xx-large;
+        color: #FDCEB9;
+        text-shadow: 2px 2px red;
+    }
+}
+.productoUno {
+    height: 80vh;
+    margin-top: 5vh;
+    display: grid;
+    grid-template-areas: "aura1 aura1 aura2"
+        "aura1 aura1 aura4"
+        "aura3 aura5 aura4";
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 3px;
+
+    .aura1 {
+        grid-area: aura2;
+    }
+
+    .aura2 {
+        grid-area: aura1;
+    }
+
+    .aura3 {
+        grid-area: aura3;
+    }
+
+    .aura4 {
+        grid-area: aura4;
+    }
+
+    .aura5 {
+        grid-area: aura5;
+    }
+
+    .prod-foto {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 999;
+    }
+}
+
+.productoDos {
+    margin-top: 5vh;
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "b-uno b-dos b-tres"
+        "b-cuatro b-cinco b-seis";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 3px;
+
+    .borgan1 {
+        grid-area: b-uno;
+    }
+
+    .borgan2 {
+        grid-area: b-dos;
+    }
+
+    .borgan3 {
+        grid-area: b-tres;
+    }
+
+    .borgan4 {
+        grid-area: b-cuatro;
+    }
+
+    .borgan5 {
+        grid-area: b-cinco;
+    }
+
+    .borgan6 {
+        grid-area: b-seis;
+    }
+
+    .borgan-foto {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 999;
+    }
+}
+
+.productoTres {
+    margin-top: 5vh;
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: 33% 33% 33% ;
+    grid-template-rows:25% 50% 25% ;
+    gap:3px;
+    
+    grid-template-areas:
+        "p-uno p-tres p-cuatro"
+        "p-uno p-cinco p-dos"
+        "p-siete p-seis p-dos";
+
+    .p-uno {
+        grid-area: p-uno;
+    }
+
+    .p-dos {
+        grid-area: p-dos;
+    }
+
+    .p-tres {
+        grid-area: p-tres;
+    }
+
+    .p-cuatro {
+        grid-area: p-cuatro;
+    }
+
+    .p-cinco {
+        grid-area: p-cinco;
+    }
+
+    .p-seis {
+        grid-area: p-seis;
+    }
+
+    .p-siete {
+        grid-area: p-siete;
+    }
+
+    .bartolo-foto {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 999;
+    }
+}
+
+.productoCuatro {
+    margin-top: 5vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 24%;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 3px;
+    grid-template-areas:
+        "flor-uno flor-uno flor-dos flor-tres"
+        "flor-uno flor-uno flor-cuatro flor-cinco"
+        "flor-seis flor-siete flor-ocho flor-cinco"
+        "flor-seis flor-siete flor-nueve flor-diez";
+
+
+    .flor-uno {
+        grid-area: flor-uno;
+    }
+
+    .flor-dos {
+        grid-area: flor-dos;
+    }
+
+    .flor-tres {
+        grid-area: flor-tres;
+    }
+
+    .flor-cuatro {
+        grid-area: flor-cuatro;
+    }
+
+    .flor-cinco {
+        grid-area: flor-cinco;
+    }
+
+    .flor-seis {
+        grid-area: flor-seis;
+    }
+
+    .flor-siete {
+        grid-area: flor-siete;
+    }
+
+    .flor-ocho {
+        grid-area: flor-ocho;
+    }
+
+    .flor-nueve {
+        grid-area: flor-nueve;
+    }
+
+    .flor-diez {
+        grid-area: flor-diez;
+    }
+
+    .flor-foto {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.productoCinco {
+    margin-top: 5vh;
+    height: 20em;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 20em;
+    gap: 3px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "coca-uno coca-dos coca-tres";
+
+    .coca-uno {
+        grid-area: coca-uno;
+    }
+
+    .coca-dos {
+        grid-area: coca-dos;
+    }
+
+    .coca-tres {
+        grid-area: coca-tres;
+    }
+
+    .foto-coca {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.productoSeis {
+    margin-top: 5vh;
+    height: 110vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 25% 25% 50%;
+    gap: 3px 3px;
+
+    grid-template-areas:
+        "picadas-cuatro picadas-cinco picadas-tres"
+        "picadas-cuatro picadas-seis picadas-tres"
+        "picadas-uno picadas-uno picadas-dos";
+
+
+    .picadas-uno {
+        grid-area: picadas-uno;
+    }
+
+    .picadas-dos {
+        grid-area: picadas-dos;
+    }
+
+    .picadas-tres {
+        grid-area: picadas-tres;
+    }
+
+    .picadas-cuatro {
+        grid-area: picadas-cuatro;
+    }
+
+    .picadas-cinco {
+        grid-area: picadas-cinco;
+    }
+
+    .picadas-seis {
+        grid-area: picadas-seis;
+    }
+
+    .picadas-foto {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+.productoSiete {
+    margin-top: 5vh;
+    height: 120vh;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 19%;
+    grid-template-rows: 34% 32% 34%;
+    gap: 3px;
+    grid-template-areas:
+        "siete-dos siete-dos siete-cuatro siete-uno siete-uno"
+        "siete-cinco siete-tres siete-tres siete-uno siete-uno"
+        "siete-seis sietes-siete siete-ocho siete-nueve siete-nueve";
+
+
+    .siete-uno {
+        grid-area: siete-uno;
+    }
+
+    .siete-dos {
+        grid-area: siete-dos;
+    }
+
+    .siete-tres {
+        grid-area: siete-tres;
+    }
+
+    .siete-cuatro {
+        grid-area: siete-cuatro;
+    }
+
+    .siete-cinco {
+        grid-area: siete-cinco;
+    }
+
+    .siete-seis {
+        grid-area: siete-seis;
+    }
+
+    .sietes-siete {
+        grid-area: sietes-siete;
+    }
+
+    .siete-ocho {
+        grid-area: siete-ocho;
+    }
+
+    .siete-nueve {
+        grid-area: siete-nueve;
+    }
+
+   
+    .siete-foto{ 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

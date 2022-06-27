@@ -242,6 +242,391 @@
   object-fit: cover;
 }
 
+.body-productos {
+  margin-left: 0;
+}
+
+.body-productos h2 {
+  margin-top: 5vh;
+  text-align: center;
+  font-size: xx-large;
+  color: #FDCEB9;
+  text-shadow: 2px 2px red;
+}
+
+.productoUno {
+  height: 80vh;
+  margin-top: 5vh;
+  display: grid;
+  grid-template-areas: "aura1 aura1 aura2" "aura1 aura1 aura4" "aura3 aura5 aura4";
+  grid-template-rows: 33% 33% 33%;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 3px;
+}
+
+.productoUno .aura1 {
+  grid-area: aura2;
+}
+
+.productoUno .aura2 {
+  grid-area: aura1;
+}
+
+.productoUno .aura3 {
+  grid-area: aura3;
+}
+
+.productoUno .aura4 {
+  grid-area: aura4;
+}
+
+.productoUno .aura5 {
+  grid-area: aura5;
+}
+
+.productoUno .prod-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 999;
+}
+
+.productoDos {
+  margin-top: 5vh;
+  height: 80vh;
+  display: grid;
+  grid-template-areas: "b-uno b-dos b-tres" "b-cuatro b-cinco b-seis";
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  grid-gap: 3px;
+}
+
+.productoDos .borgan1 {
+  grid-area: b-uno;
+}
+
+.productoDos .borgan2 {
+  grid-area: b-dos;
+}
+
+.productoDos .borgan3 {
+  grid-area: b-tres;
+}
+
+.productoDos .borgan4 {
+  grid-area: b-cuatro;
+}
+
+.productoDos .borgan5 {
+  grid-area: b-cinco;
+}
+
+.productoDos .borgan6 {
+  grid-area: b-seis;
+}
+
+.productoDos .borgan-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 999;
+}
+
+.productoTres {
+  margin-top: 5vh;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 25% 50% 25%;
+  gap: 3px;
+  grid-template-areas: "p-uno p-tres p-cuatro" "p-uno p-cinco p-dos" "p-siete p-seis p-dos";
+}
+
+.productoTres .p-uno {
+  grid-area: p-uno;
+}
+
+.productoTres .p-dos {
+  grid-area: p-dos;
+}
+
+.productoTres .p-tres {
+  grid-area: p-tres;
+}
+
+.productoTres .p-cuatro {
+  grid-area: p-cuatro;
+}
+
+.productoTres .p-cinco {
+  grid-area: p-cinco;
+}
+
+.productoTres .p-seis {
+  grid-area: p-seis;
+}
+
+.productoTres .p-siete {
+  grid-area: p-siete;
+}
+
+.productoTres .bartolo-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 999;
+}
+
+.productoCuatro {
+  margin-top: 5vh;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 24%;
+  grid-template-rows: 25% 25% 25% 25%;
+  gap: 3px;
+  grid-template-areas: "flor-uno flor-uno flor-dos flor-tres" "flor-uno flor-uno flor-cuatro flor-cinco" "flor-seis flor-siete flor-ocho flor-cinco" "flor-seis flor-siete flor-nueve flor-diez";
+}
+
+.productoCuatro .flor-uno {
+  grid-area: flor-uno;
+}
+
+.productoCuatro .flor-dos {
+  grid-area: flor-dos;
+}
+
+.productoCuatro .flor-tres {
+  grid-area: flor-tres;
+}
+
+.productoCuatro .flor-cuatro {
+  grid-area: flor-cuatro;
+}
+
+.productoCuatro .flor-cinco {
+  grid-area: flor-cinco;
+}
+
+.productoCuatro .flor-seis {
+  grid-area: flor-seis;
+}
+
+.productoCuatro .flor-siete {
+  grid-area: flor-siete;
+}
+
+.productoCuatro .flor-ocho {
+  grid-area: flor-ocho;
+}
+
+.productoCuatro .flor-nueve {
+  grid-area: flor-nueve;
+}
+
+.productoCuatro .flor-diez {
+  grid-area: flor-diez;
+}
+
+.productoCuatro .flor-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productoCinco {
+  margin-top: 5vh;
+  height: 20em;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 20em;
+  gap: 3px 3px;
+  grid-auto-flow: row;
+  grid-template-areas: "coca-uno coca-dos coca-tres";
+}
+
+.productoCinco .coca-uno {
+  grid-area: coca-uno;
+}
+
+.productoCinco .coca-dos {
+  grid-area: coca-dos;
+}
+
+.productoCinco .coca-tres {
+  grid-area: coca-tres;
+}
+
+.productoCinco .foto-coca {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productoSeis {
+  margin-top: 5vh;
+  height: 110vh;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 25% 25% 50%;
+  gap: 3px 3px;
+  grid-template-areas: "picadas-cuatro picadas-cinco picadas-tres" "picadas-cuatro picadas-seis picadas-tres" "picadas-uno picadas-uno picadas-dos";
+}
+
+.productoSeis .picadas-uno {
+  grid-area: picadas-uno;
+}
+
+.productoSeis .picadas-dos {
+  grid-area: picadas-dos;
+}
+
+.productoSeis .picadas-tres {
+  grid-area: picadas-tres;
+}
+
+.productoSeis .picadas-cuatro {
+  grid-area: picadas-cuatro;
+}
+
+.productoSeis .picadas-cinco {
+  grid-area: picadas-cinco;
+}
+
+.productoSeis .picadas-seis {
+  grid-area: picadas-seis;
+}
+
+.productoSeis .picadas-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productoSiete {
+  margin-top: 5vh;
+  height: 120vh;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 19%;
+  grid-template-rows: 34% 32% 34%;
+  gap: 3px;
+  grid-template-areas: "siete-dos siete-dos siete-cuatro siete-uno siete-uno" "siete-cinco siete-tres siete-tres siete-uno siete-uno" "siete-seis sietes-siete siete-ocho siete-nueve siete-nueve";
+}
+
+.productoSiete .siete-uno {
+  grid-area: siete-uno;
+}
+
+.productoSiete .siete-dos {
+  grid-area: siete-dos;
+}
+
+.productoSiete .siete-tres {
+  grid-area: siete-tres;
+}
+
+.productoSiete .siete-cuatro {
+  grid-area: siete-cuatro;
+}
+
+.productoSiete .siete-cinco {
+  grid-area: siete-cinco;
+}
+
+.productoSiete .siete-seis {
+  grid-area: siete-seis;
+}
+
+.productoSiete .sietes-siete {
+  grid-area: sietes-siete;
+}
+
+.productoSiete .siete-ocho {
+  grid-area: siete-ocho;
+}
+
+.productoSiete .siete-nueve {
+  grid-area: siete-nueve;
+}
+
+.productoSiete .siete-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sec-Contacto {
+  min-height: 100vh;
+  width: 100%;
+  margin-left: -1vw;
+}
+
+.sec-Contacto .textoContacto {
+  display: flexbox;
+  margin: auto 0;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+.sec-Contacto .accordion {
+  margin-top: 10vh;
+}
+
+.sec-Contacto .accordion .accordion-item label {
+  margin: 3px;
+}
+
+.sec-Contacto .title span {
+  --total: calc(var(--duration) + var(--delay));
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  color: transparent;
+  overflow: hidden;
+  animation: revealText 10s var(--total) forwards;
+  font-size: 12vh;
+}
+
+.sec-Contacto .title span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #FDCEB9;
+  animation: rollIn var(--duration) var(--delay) forwards, rollOut var(--duration) var(--total) forwards;
+}
+
+.sec-Contacto .title span:nth-child(3)::after {
+  border-top: 3px solid #FDCEB9;
+}
+
+@keyframes revealText {
+  to {
+    color: #ff5858;
+  }
+}
+
+@keyframes rollIn {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes rollOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(105%);
+  }
+}
+
 .footerGeneral {
   height: auto;
   width: 100%;

@@ -1,0 +1,84 @@
+.sec-Contacto {
+    min-height: 100vh;
+    width: 100%;
+    margin-left: -1vw;
+
+
+    .textoContacto {
+        display: flexbox;
+        margin: auto 0;
+        margin-top: 10vh;
+        text-align: center;
+    }
+
+   .accordion{
+    margin-top: 10vh;
+
+    .accordion-item{
+        
+        label{ 
+            margin: 3px;
+            
+        }
+    
+   }
+}
+
+.title span {
+    --total: calc(var(--duration) + var(--delay));
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    color: transparent;
+    overflow: hidden;
+    animation: revealText 10s var(--total) forwards;
+    font-size: 12vh;
+}
+
+.title span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #FDCEB9;
+    animation: rollIn var(--duration) var(--delay) forwards,
+        rollOut var(--duration) var(--total) forwards;
+
+}
+
+.title span:nth-child(3)::after {
+    border-top: 3px solid #FDCEB9;
+}
+
+@keyframes revealText {
+    to {
+        color: rgb(255,88,88);
+        
+    }
+
+}
+
+@keyframes rollIn {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes rollOut {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(105%);
+    }
+}
+} 
