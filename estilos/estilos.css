@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 99.4%;
 }
 
 .encabezado {
@@ -13,7 +14,7 @@
 
 .encabezado .barraNav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -95,9 +96,15 @@
 }
 
 .indexUno {
+  margin-top: 1vh;
   height: 80vh;
   width: 100%;
-  background-color: antiquewhite;
+}
+
+.indexUno .carousel .foto-carusel {
+  width: 100%;
+  height: 78vh;
+  object-fit: cover;
 }
 
 .indexDos {
@@ -128,9 +135,10 @@
 .deporteUno-titulo {
   font-size: xx-large;
   text-align: center;
-  justify-content: center;
+  color: #FDCEB9;
+  text-shadow: 2px 2px red;
   height: 10vh;
-  margin-top: 1vh;
+  margin-top: 5vh;
 }
 
 .secDeportes {
@@ -560,6 +568,11 @@
   margin-left: -1vw;
 }
 
+.sec-Contacto .form-titulo {
+  color: #FDCEB9;
+  text-shadow: 2px 2px red;
+}
+
 .sec-Contacto .textoContacto {
   display: flexbox;
   margin: auto 0;
@@ -629,7 +642,7 @@
 
 .footerGeneral {
   height: auto;
-  width: 100%;
+  width: 99%;
   margin-top: 10px;
   margin-bottom: 0px;
   /*
