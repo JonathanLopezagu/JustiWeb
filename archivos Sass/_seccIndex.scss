@@ -10,7 +10,7 @@
 
 
     .carousel {
-        
+
         .foto-carusel {
             width: 100%;
             height: 78vh;
@@ -28,23 +28,157 @@
 
     .cardFoto {
 
-        background-color: red;
+
+        .picture-contain {
+            display: inline-block;
+            background-color: #FDCEB9;
+            border-radius: 25%;
+        }
+
+        .picture-img {
+            width: 100%;
+            height: 95vh;
+            mix-blend-mode: multiply;
+            filter: grayscale(100%);
+            border-radius: 25%;
+        }
     }
 
     .cardInfo {
-        background-color: black;
+
+        .titulo-uno {
+            color: #FDCEB9;
+            text-align: center;
+            text-decoration: underline;
+            text-shadow: 2px 2px red;
+        }
+
+        .subtitulo-uno {
+            color: #FDCEB9;
+            text-align: center;
+            text-shadow: 2px 2px red;
+        }
+
+        .subtitulo-dos {
+            color: #FDCEB9;
+            text-align: center;
+            text-shadow: 2px 2px red;
+        }
+
+        .parrafo-info {
+            text-align: justify;
+            padding: 1vh;
+        }
+
+        .firma {
+            color: black;
+            text-shadow: 2px 2px #FDCEB9;
+            text-align: left;
+
+        }
     }
 }
 
-.indexTres {
-    height: 80vh;
-    width: 100%;
-    background-color: coral;
-
-}
-
 .indexCuatro {
-    height: 80vh;
+    height: max-content;
     width: 100%;
-    background-color: aquamarine;
+
+    .portafolio-title{
+        text-align: center;
+        font-size: 15vh;
+        color: #FDCEB9;
+        text-shadow: 4px 4px red;
+        margin-bottom: 5vh;
+    }
+
+
+    .portafolio {
+        display: grid;
+        grid-template-columns: 19.3% 20.7% 20% 20% 20%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-auto-columns: 1fr;
+        gap: 3px 3px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "por-tres por-seis por-siete por-uno por-uno"
+            "por-cinco por-cinco por-ocho por-nueve por-diez"
+            "por-17 por-dos por-dos por-cuatro por-cuatro"
+            "por-18 por-18 por-quince por-quince por-16"
+            "por-trece por-trece por-once por-once por-catorce";
+    }
+
+    .por-uno {
+        grid-area: por-uno;
+    }
+
+    .por-cuatro {
+        grid-area: por-cuatro;
+    }
+
+    .por-seis {
+        grid-area: por-seis;
+    }
+
+    .por-siete {
+        grid-area: por-siete;
+    }
+
+    .por-ocho {
+        grid-area: por-ocho;
+    }
+
+    .por-nueve {
+        grid-area: por-nueve;
+    }
+
+    .por-diez {
+        grid-area: por-diez;
+    }
+
+    .por-once {
+        grid-area: por-once;
+    }
+
+    .por-trece {
+        grid-area: por-trece;
+    }
+
+    .por-catorce {
+        grid-area: por-catorce;
+    }
+
+    .por-16 {
+        grid-area: por-16;
+    }
+
+    .por-17 {
+        grid-area: por-17;
+    }
+
+    .por-tres {
+        grid-area: por-tres;
+    }
+
+    .por-cinco {
+        grid-area: por-cinco;
+    }
+
+    .por-dos {
+        grid-area: por-dos;
+    }
+
+    .por-18 {
+        grid-area: por-18;
+    }
+
+    .por-quince {
+        grid-area: por-quince;
+    }
+
+
+    .foto-portafolio {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
 }

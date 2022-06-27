@@ -112,24 +112,145 @@
   width: 100%;
 }
 
-.indexDos .cardFoto {
-  background-color: red;
+.indexDos .cardFoto .picture-contain {
+  display: inline-block;
+  background-color: #FDCEB9;
+  border-radius: 25%;
 }
 
-.indexDos .cardInfo {
-  background-color: black;
-}
-
-.indexTres {
-  height: 80vh;
+.indexDos .cardFoto .picture-img {
   width: 100%;
-  background-color: coral;
+  height: 95vh;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%);
+  border-radius: 25%;
+}
+
+.indexDos .cardInfo .titulo-uno {
+  color: #FDCEB9;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px red;
+}
+
+.indexDos .cardInfo .subtitulo-uno {
+  color: #FDCEB9;
+  text-align: center;
+  text-shadow: 2px 2px red;
+}
+
+.indexDos .cardInfo .subtitulo-dos {
+  color: #FDCEB9;
+  text-align: center;
+  text-shadow: 2px 2px red;
+}
+
+.indexDos .cardInfo .parrafo-info {
+  text-align: justify;
+  padding: 1vh;
+}
+
+.indexDos .cardInfo .firma {
+  color: black;
+  text-shadow: 2px 2px #FDCEB9;
+  text-align: left;
 }
 
 .indexCuatro {
-  height: 80vh;
+  height: max-content;
   width: 100%;
-  background-color: aquamarine;
+}
+
+.indexCuatro .portafolio-title {
+  text-align: center;
+  font-size: 15vh;
+  color: #FDCEB9;
+  text-shadow: 4px 4px red;
+  margin-bottom: 5vh;
+}
+
+.indexCuatro .portafolio {
+  display: grid;
+  grid-template-columns: 19.3% 20.7% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-auto-columns: 1fr;
+  gap: 3px 3px;
+  grid-auto-flow: row;
+  grid-template-areas: "por-tres por-seis por-siete por-uno por-uno" "por-cinco por-cinco por-ocho por-nueve por-diez" "por-17 por-dos por-dos por-cuatro por-cuatro" "por-18 por-18 por-quince por-quince por-16" "por-trece por-trece por-once por-once por-catorce";
+}
+
+.indexCuatro .por-uno {
+  grid-area: por-uno;
+}
+
+.indexCuatro .por-cuatro {
+  grid-area: por-cuatro;
+}
+
+.indexCuatro .por-seis {
+  grid-area: por-seis;
+}
+
+.indexCuatro .por-siete {
+  grid-area: por-siete;
+}
+
+.indexCuatro .por-ocho {
+  grid-area: por-ocho;
+}
+
+.indexCuatro .por-nueve {
+  grid-area: por-nueve;
+}
+
+.indexCuatro .por-diez {
+  grid-area: por-diez;
+}
+
+.indexCuatro .por-once {
+  grid-area: por-once;
+}
+
+.indexCuatro .por-trece {
+  grid-area: por-trece;
+}
+
+.indexCuatro .por-catorce {
+  grid-area: por-catorce;
+}
+
+.indexCuatro .por-16 {
+  grid-area: por-16;
+}
+
+.indexCuatro .por-17 {
+  grid-area: por-17;
+}
+
+.indexCuatro .por-tres {
+  grid-area: por-tres;
+}
+
+.indexCuatro .por-cinco {
+  grid-area: por-cinco;
+}
+
+.indexCuatro .por-dos {
+  grid-area: por-dos;
+}
+
+.indexCuatro .por-18 {
+  grid-area: por-18;
+}
+
+.indexCuatro .por-quince {
+  grid-area: por-quince;
+}
+
+.indexCuatro .foto-portafolio {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
 }
 
 .deporteUno-titulo {
