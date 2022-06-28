@@ -19,7 +19,6 @@
         }
     }
 
-
 }
 
 .indexDos {
@@ -80,6 +79,7 @@
 }
 
 .indexTres {
+    margin-top: 5vh;
     height: 80vh;
     position: relative;
     display: flex;
@@ -283,5 +283,97 @@
         width: 100%;
         height: 50vh;
         object-fit: cover;
+    }
+}
+
+@media (max-width:1024px) and (min-width:768px) {
+    .indexDos{
+        height: 100vh;
+        .picture-contain{
+            margin-top: 10vh;
+        }
+        .cardFoto{
+            .picture-img{
+                //margin-top:20vh;
+                height: 80vh;
+            }
+        }
+
+        .cardInfo{
+            .titulo-uno{
+                font-size: x-large;
+                color: black;
+                text-shadow: 2px 2px #FDCEB9;
+            }
+
+            .subtitulo-uno{
+                font-size: large;
+                color: black;
+                text-shadow: 2px 2px #FDCEB9;
+            }
+            .subtitulo-dos{
+                font-size: large;
+                color: black;
+                text-shadow: 2px 2px #FDCEB9;
+            }
+            
+            .parrafo-info{
+                font-size: small;
+                padding: 0px;
+            }
+        }
+
+    }
+    .indexCuatro{
+        .portafolio-title{
+            font-size: 10vh;
+            
+        }
+    }
+}
+
+@media (max-width:767px) and (min-width:576px) {
+    .indexDos{
+        height: 115vh;
+        .picture-contain{
+            margin-top: 10vh;
+        }
+        .cardFoto{
+            .picture-img{
+                //margin-top:20vh;
+                height: 80vh;
+            }
+        }
+
+        .cardInfo{
+            .titulo-uno{
+                font-size: large;
+                color: black;
+                text-shadow: 2px 2px #FDCEB9;
+            }
+
+            .subtitulo-uno{
+                font-size: large;
+                color: black;
+                text-shadow: 2px 2px #FDCEB9;
+            }
+            .subtitulo-dos{
+                font-size: large;
+                color: black;
+                text-shadow: 2px 2px #FDCEB9;
+            }
+            
+            .parrafo-info{
+                font-size: small;
+                padding: 0px;
+            }
+        }
+
+    }
+    .indexCuatro{
+        .portafolio-title{
+            font-size: 10vh;
+            
+        }
     }
 }
