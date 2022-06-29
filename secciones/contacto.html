@@ -23,7 +23,9 @@
         <header class="encabezado">
             <nav class="barraNav">
                 <a class="logo" href="../index.html"><img class="img-logo" src="../multimedia/logos/justins_logo.jpg"
-                        alt="logo"> <p class="p-logo"> JUSTIN'S PHOTOGRAPHY  </p></a>
+                        alt="logo">
+                    <p class="p-logo"> JUSTIN'S PHOTOGRAPHY </p>
+                </a>
                 <button class="toggleNav">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -36,9 +38,9 @@
             </nav>
         </header>
     </div>
-    
+
     <div class="container-fluid">
-      
+
         <div class="sec-Contacto row">
             <div class="textoContacto title col-xs-12 col-md-12 col-lg-6" style="--duration: 3s">
                 <span style="--delay: .7s">Retratemos</span>
@@ -62,55 +64,70 @@
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <label for="nombre-novia">Introduce el Nombre y Apellido de la novia</label>
-                            <input type="text" name="nombre-novia">
+                            <div class="input-group">
+                                <span class="input-group-text">Nombre de la Novia</span>
+                                <input type="text" aria-label="First name" class="form-control">
+                                <input type="text" aria-label="Last name" class="form-control">
+                            </div>
                             <br>
-                            <label for="nombre-novio">Introduce el Nombre y Apellido del novio</label>
-                            <input type="text" name="nombre-novio">
+                            <div class="input-group">
+                                <span class="input-group-text">Nombre del Novio</span>
+                                <input type="text" aria-label="First name" class="form-control">
+                                <input type="text" aria-label="Last name" class="form-control">
+                            </div>
                             <br>
-                            <label for="correo-boda">Agrega un correo de contacto de contacto </label>
-                            <input type="email" name="correo-boda" placeholder="correo-ejemplo@email.com">
-                            <br>
-                            <label for="fecha">¿cual es la fecha de la boda? </label>
-                            <input type="date-boda" name="fecha-boda">
-                            <br>
-                            <label for="ubicacion-boda">Ubicacion de la ceremonia y fiesta </label>
-                            <input type="text" name="ubicacion-boda">
-                            <br>
-                            <laberl> Cuentame algunos detalles importantes de tu boda </laberl>
-                            <label for="dia-noche">¿Sera durante el dia o la noche?</label>
-                            <input type="text" name="dia-noche">
-                            <br>
-                            <label for="ceremonia">¿Ceremonia religiosa o simbolica?</label>
-                            <input type="text" name="ceremonia">
-                            <br>
-                            <label for="invitados-boda">¿Cuantos invitados tendran aproximadamente?</label>
-                            <input type="text" name="invitados-boda">
-                            <br>
-                            <label> ¿Viste algun registro de una boda completa? </label>
-                            <select>
-                                <option> SI, CONOZCO TU REGISTRO </option>
-                                <option> NO, SOLO LINK DE CONTACTO </option>
-                                <option> ME GUSTARÍA VER UNA BODA COMPLETO  </option>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Agrega un correo de contacto de
+                                    contacto</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput" class="form-label">Ubicacion del evento</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Fecha del evento</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">¿Cuantos invitados esperas
+                                    aproximadamente?</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>¿Sera durante el dia o la noche?</option>
+                                <option value="1">Dia</option>
+                                <option value="2">Noche</option>
                             </select>
                             <br>
-                            <label> ¿como me encontraron? </label>
-                            <select>
-                                <option> INSTAGRAM </option>
-                                <option> FACEBOOK </option>
-                                <option> GOOGLE </option>
-                                <option> RECOMENDACIÓN </option>
-                                <option> PÁGINA WEB </option>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>¿Ceremonia religiosa o simbolica?</option>
+                                <option value="1">Religiosa</option>
+                                <option value="2">Simbolica</option>
                             </select>
                             <br>
-                            <label for="web-boda">¿Te a gustado alguno de mis trabajos publicados en mi web?</label>
-                            <input type="text" name="web-boda">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>¿Viste algun registro de una boda completa?</option>
+                                <option value="1">SI, CONOZCO TU REGISTRO </option>
+                                <option value="2">NO, SOLO LINK DE CONTACTO</option>
+                                <option value="3">ME GUSTARÍA VER UNA BODA COMPLETO</option>
+                            </select>
                             <br>
-                            <label for="duda-boda">¿Por que les gustaria que yo registre su boda?</label>
-                            <input type="text" name="duda-boda">
-                            <br>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>¿como me encontraron?</option>
+                                <option value="1">INSTAGRAM</option>
+                                <option value="2">FACEBOOK</option>
+                                <option value="3">GOOGLE</option>
+                                <option value="4">RECOMENDACIÓN</option>
+                                <option value="5">PÁGINA WEB</option>
+                            </select>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">¿Por que les gustaria que yo
+                                    registre su boda? ¿Te gusto algun trabajo publicado en esta Web?</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
                             <button> Enviar </button>
-                            <button> limpiar</button>
                         </div>
                     </div>
                 </div>
@@ -124,48 +141,71 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <label for="nombre-apellido-deportes">Introduce tu Nombre y Apellido</label>
-                            <input type="text" name="nombre-apellido-deportes">
+                            <div class="input-group">
+                                <span class="input-group-text">Nombre de contacto</span>
+                                <input type="text" aria-label="First name" class="form-control">
+                                <input type="text" aria-label="Last name" class="form-control">
+                            </div>
                             <br>
-                            <label for="correo-deportes">Agrega un correo de contacto </label>
-                            <input type="email" name="correo-deportes" placeholder="correo-ejemplo@email.com">
-                            <br>
-                            <label for="fecha-deportes"> ¿Cual es la fecha del evento? </label>
-                            <input type="date" name="fecha-deportes">
-                            <br>
-                            <label for="ubicacion-deportes">Ubicacion</label>
-                            <input type="text" name="ubicacion-deportes">
-                            <br>
-                            <label for="personas-deportes">¿Cuantas personas hay que retratar?</label>
-                            <input type="text" name="personas-deportes">
-                            <br>
-                            <label for="evento-dur-deportes">¿Cual es la duracion esperada del evento?</label>
-                            <input type="text" name="evento-dur-deportes">
-                            <br>
-                            <label for="premiacion">¿Se fotografiaria la premiacion?</label>
-                            <input type="text" name="premiacion">
-                            <br>
-                            <label> ¿como me encontraron? </label>
-                            <select>
-                                <option> INSTAGRAM </option>
-                                <option> FACEBOOK </option>
-                                <option> GOOGLE </option>
-                                <option> RECOMENDACIÓN </option>
-                                <option> PÁGINA WEB </option>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Agrega un correo de contacto de
+                                    contacto</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">¿Cual es la fecha del
+                                    evento?</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">¿Cual sera la ubicacion del
+                                    evento?</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">¿Cuantos participantes esperas
+                                    aproximadamente?</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">¿Duracion aproximada del
+                                    evento?</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>¿Sera durante el dia o la noche?</option>
+                                <option value="1">Dia</option>
+                                <option value="2">Noche</option>
                             </select>
                             <br>
-                            <label> ¿Viste algun registro de un evento deportivo completo? </label>
-                            <select>
-                                <option> SI, CONOZCO TU REGISTRO </option>
-                                <option> NO, SOLO LINK DE CONTACTO </option>
-                                <option> ME GUSTARÍA VER UN EVENTO COMPLETO  </option>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>¿Se fotografiaria la premiacion?</</option> <option value="1">Si
+                                </option>
+                                <option value="2">No</option>
                             </select>
                             <br>
-                            <label for="web-deportes">¿Te a gustado alguno de mis trabajos publicados en mi web?</label>
-                            <input type="text" name="web-deportes">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>¿Viste algun registro de evento deportivo completo?</option>
+                                <option value="1">SI, CONOZCO TU REGISTRO </option>
+                                <option value="2">NO, SOLO LINK DE CONTACTO</option>
+                                <option value="3">ME GUSTARÍA VER UNA BODA COMPLETO</option>
+                            </select>
                             <br>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>¿Como me encontraron?</option>
+                                <option value="1">INSTAGRAM</option>
+                                <option value="2">FACEBOOK</option>
+                                <option value="3">GOOGLE</option>
+                                <option value="4">RECOMENDACIÓN</option>
+                                <option value="5">PÁGINA WEB</option>
+                            </select>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">¿Por que les gustaria que yo
+                                    registre su evento? ¿Te gusto algun trabajo publicado en esta Web?</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
                             <button> Enviar </button>
-                            <button> limpiar</button>
                         </div>
                     </div>
                 </div>
@@ -179,88 +219,102 @@
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <label for="nombre-apellido-productos">Introduce tu Nombre y Apellido</label>
-                            <input type="text" name="nombre-apellido-productos">
+                            <div class="input-group">
+                                <span class="input-group-text">Nombre de contacto</span>
+                                <input type="text" aria-label="First name" class="form-control">
+                                <input type="text" aria-label="Last name" class="form-control">
+                            </div>
                             <br>
-                            <label for="correo-productos">Agrega un correo de contacto </label>
-                            <input type="email" name="correo-productos" placeholder="correo-ejemplo@email.com">
-                            <br>
-                            <label for="fecha-productos">Fecha de la sesion </label>
-                            <input type="date" name="fecha-productos">
-                            <br>
-                            <label for="ubicacion-productos">Ubicacion del encuentro</label>
-                            <input type="text" name="ubicacion-productos">
-                            <br>
-                            <label> Cuentame algunos detalles acerca de tus productos</label>
-                            <br>
-                            <label for="productos-tipo">¿Que productos son?</label>
-                            <input type="text" name="productos-tipo">
-                            <br>
-                            <label for="productos-cantidad">¿Cuantos productos seran fotografiados?</label>
-                            <input type="text" name="productos-cantidad">
-                            <br>
-                            <label for="productos-video">¿Necesitan videos?</label>
-                            <input type="text" name="productos-video">
-                            <br>
-                            <label> ¿como me encontraron? </label>
-                            <select>
-                                <option> INSTAGRAM </option>
-                                <option> FACEBOOK </option>
-                                <option> GOOGLE </option>
-                                <option> RECOMENDACIÓN </option>
-                                <option> PÁGINA WEB </option>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Agrega un correo de contacto de
+                                    contacto</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">¿Cual es la fecha de la
+                                    sesiòn?</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">¿Cual es la ubicacion?</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">¿Que tipos de productos
+                                    son?</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">¿Cuantos productos deseas
+                                    fotografiar?</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>¿Necesitan videos?</</option> <option value="1">Si</option>
+                                <option value="2">No</option>
                             </select>
                             <br>
-                            <label> ¿Viste alguna sesion de FotoProductos completa? </label>
-                            <select>
-                                <option> SI, CONOZCO TU REGISTRO </option>
-                                <option> NO, SOLO LINK DE CONTACTO </option>
-                                <option> ME GUSTARÍA VER UN EVENTO COMPLETO  </option>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>¿Viste algun registro de evento deportivo completo?</option>
+                                <option value="1">SI, CONOZCO TU REGISTRO </option>
+                                <option value="2">NO, SOLO LINK DE CONTACTO</option>
+                                <option value="3">ME GUSTARÍA VER UNA BODA COMPLETO</option>
                             </select>
                             <br>
-                            <label for="web-productos">¿Te a gustado alguno de mis trabajos publicados en mi web?</label>
-                            <input type="text" name="web-productos">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>¿Como me encontraron?</option>
+                                <option value="1">INSTAGRAM</option>
+                                <option value="2">FACEBOOK</option>
+                                <option value="3">GOOGLE</option>
+                                <option value="4">RECOMENDACIÓN</option>
+                                <option value="5">PÁGINA WEB</option>
+                            </select>
                             <br>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">¿Por que les gustaria que yo
+                                    fotografie su producto? ¿Te gusto algun trabajo publicado en esta Web?</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
                             <button> Enviar </button>
-                            <br>
-                            <button> limpiar</button>
                         </div>
                     </div>
                 </div>
 
-            </div>
-        </div>
-        <footer class="footerGeneral">
-            <div class="imagenesFooter">
-                <section>
-                    <p>JUSTIN'S PHOTOGRAPHY<p>
-                </section>
-                <section>
-                    <p>Mapa del sitio : </p>
-                </section>
-                <section>
-                    <a class="mapaSitio" href=""> JUSTIN PHOTOGRAPHY HOME</a>
-                    <a class="mapaSitio" href=""> BODAS</a>
-                    <a class="mapaSitio" href=""> DEPORTES</a>
-                    <a class="mapaSitio" href=""> FOTOPRODUCTOS</a>
-                    <a class="mapaSitio" href=""> CONTACTO</a>
-                </section>
-                <a class="redLink" href=""> <img class="imgRedes" src="../multimedia/iconos/facebook (2).png"
-                        alt="redSocial.1"> </a>
-                <a class="redLink" href=""> <img class="imgRedes" src="../multimedia/iconos/instagram (2).png"
-                        alt="redSocial.2"> </a>
-                <a class="redLink" href=""> <img class="imgRedes" src="../multimedia/iconos/whatsapp (4).png"
-                        alt="redSocial.3"> </a>
 
             </div>
-        </footer>
+            <footer class="footerGeneral">
+                <div class="imagenesFooter">
+                    <section>
+                        <p>JUSTIN'S PHOTOGRAPHY<p>
+                    </section>
+                    <section>
+                        <p>Mapa del sitio : </p>
+                    </section>
+                    <section>
+                        <a class="mapaSitio" href=""> JUSTIN PHOTOGRAPHY HOME</a>
+                        <a class="mapaSitio" href=""> BODAS</a>
+                        <a class="mapaSitio" href=""> DEPORTES</a>
+                        <a class="mapaSitio" href=""> FOTOPRODUCTOS</a>
+                        <a class="mapaSitio" href=""> CONTACTO</a>
+                    </section>
+                    <a class="redLink" href=""> <img class="imgRedes" src="../multimedia/iconos/facebook (2).png"
+                            alt="redSocial.1"> </a>
+                    <a class="redLink" href=""> <img class="imgRedes" src="../multimedia/iconos/instagram (2).png"
+                            alt="redSocial.2"> </a>
+                    <a class="redLink" href=""> <img class="imgRedes" src="../multimedia/iconos/whatsapp (4).png"
+                            alt="redSocial.3"> </a>
 
-        <!-- Script Bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
-        <!-- script barra Nav-->
-        <script src="../archivosJS/barraNavegacion.js"></script>
+                </div>
+            </footer>
+
+            <!-- Script Bootstrap-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous">
+            </script>
+            <!-- script barra Nav-->
+            <script src="../archivosJS/barraNavegacion.js"></script>
 </body>
 
 </html>
