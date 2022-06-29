@@ -22,7 +22,7 @@
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 3px;
-        
+
 
         .foto1 {
             grid-area: foto;
@@ -109,7 +109,7 @@
         }
     }
 
-    .deportesTres{
+    .deportesTres {
         width: 100%;
         height: 75vh;
         display: grid;
@@ -119,13 +119,14 @@
         grid-gap: 3px;
         margin-bottom: 5vh;
 
-        .foto1-tres{
+        .foto1-tres {
             grid-area: uno;
-            
+
         }
-        .foto2-tres{
+
+        .foto2-tres {
             grid-area: dos;
-            
+
         }
 
         .foto {
@@ -134,4 +135,117 @@
             object-fit: cover;
         }
     }
+}
+
+
+@media (max-width:575px) {
+
+    .secDeportes {
+
+        .deportesUno {
+            height: 150vh;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50vh 50vh 50vh;
+            grid-auto-columns: 1fr;
+            gap: 3px 3px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "foto-1 foto-1"
+                "foto-3 foto-4"
+                "foto-5 foto-6";
+
+
+            .foto1 {
+                grid-area: foto-1;
+            }
+
+            .foto2 {
+                grid-area: foto-2;
+            }
+
+            .foto3 {
+                grid-area: foto-3;
+            }
+
+            .foto4 {
+                grid-area: foto-4;
+            }
+
+            .foto5 {
+                grid-area: foto-5;
+            }
+
+            .foto6 {
+                grid-area: foto-6;
+            }
+
+        }
+
+        .deportesDos {
+            height: 200vh;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50vh 50vh 50vh 50vh;
+            grid-auto-columns: 1fr;
+            gap: 3px 3px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "foto-1 foto-1"
+                "foto-3 foto-4"
+                "foto-5 foto-6"
+                "foto-2 foto-2";
+
+
+            .foto1-dos {
+                grid-area: foto-1;
+            }
+
+            .foto2-dos {
+                grid-area: foto-2;
+            }
+
+            .foto3-dos {
+                grid-area: foto-3;
+            }
+
+            .foto4-dos {
+                grid-area: foto-4;
+            }
+
+            .foto5-dos {
+                grid-area: foto-5;
+            }
+
+            .foto6-dos {
+                grid-area: foto-6;
+            }
+
+        }
+
+        .deportesTres {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-areas: "uno"
+                "dos";
+            grid-template-columns: 1fr;
+            grid-template-rows: 50vh;
+            grid-gap: 3px;
+            margin-bottom: 5vh;
+
+            .foto1-tres {
+                grid-area: uno;
+
+            }
+
+            .foto2-tres {
+                grid-area: dos;
+
+            }
+
+        }
+    }
+
+
 }

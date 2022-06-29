@@ -45,7 +45,7 @@
         // Estilos barra nav
         .navBar {
             display: flex;
-            //margin-right: 10vw;
+            
 
             .nav-item {
                 list-style: none;
@@ -88,7 +88,11 @@
                     font-size: large;
                 }
 
-                
+                .p-logo{
+                    display:none;
+                    
+                }
+
                 // estilos bottom nav para vist mobile
                 .toggleNav {
                     display: block;
@@ -158,6 +162,20 @@
                 margin-bottom: 1vw;
                 border-radius: 30px;
             }
+            .p-logo{
+                display:none;
+                
+            }
+        }
+    }
+    
+}
+
+@media(max-width:992px) and (min-width:769px){
+
+    .barraNav{ 
+        .logo {
+            
             .p-logo{
                 display:none;
                 
