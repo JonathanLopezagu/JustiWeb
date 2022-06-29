@@ -122,3 +122,47 @@
     }
 
 }
+
+@media (min-width:576px)  and (max-width:767px){
+
+    .barraNav{ 
+        .logo {
+            font-size: small;
+            
+            .img-logo {
+                width: 15vw;
+                height: 10vh;
+                margin-top: 1vw;
+                margin-bottom: 1vw;
+                border-radius: 30px;
+            }
+            .p-logo{
+                display:none;
+                
+            }
+        }
+    }
+    
+}
+
+@media(max-width:576px){
+
+    .barraNav{ 
+        .logo {
+            font-size: small;
+            
+            .img-logo {
+                width: 15vw;
+                height: 10vh;
+                margin-top: 1vw;
+                margin-bottom: 1vw;
+                border-radius: 30px;
+            }
+            .p-logo{
+                display:none;
+                
+            }
+        }
+    }
+    
+}

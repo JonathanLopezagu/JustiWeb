@@ -98,6 +98,38 @@
   }
 }
 
+@media (min-width: 576px) and (max-width: 767px) {
+  .barraNav .logo {
+    font-size: small;
+  }
+  .barraNav .logo .img-logo {
+    width: 15vw;
+    height: 10vh;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 30px;
+  }
+  .barraNav .logo .p-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .barraNav .logo {
+    font-size: small;
+  }
+  .barraNav .logo .img-logo {
+    width: 15vw;
+    height: 10vh;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 30px;
+  }
+  .barraNav .logo .p-logo {
+    display: none;
+  }
+}
+
 .container-fluid {
   width: 100%;
   margin-left: 1vw;
@@ -192,7 +224,7 @@
   align-items: center;
   z-index: 1;
   transform: translateY(20vh);
-  border-radius: 5% 5%  0 0;
+  border-radius: 5% 5% 0 0;
 }
 
 .indexTres .card .content {
@@ -363,6 +395,10 @@
   object-fit: cover;
 }
 
+.foto-portafolio:hover {
+  transform: scale(1);
+}
+
 @media (max-width: 1024px) and (min-width: 768px) {
   .indexDos {
     height: 100vh;
@@ -428,6 +464,94 @@
   }
   .indexCuatro .portafolio-title {
     font-size: 10vh;
+  }
+}
+
+@media (max-width: 575px) {
+  .indexDos {
+    height: 190vh;
+  }
+  .indexDos .cardFoto .picture-img {
+    height: 50vh;
+  }
+  .indexDos .cardInfo {
+    margin-top: 1vh;
+  }
+  .indexDos .cardInfo .subtitulo-dos {
+    text-align: center;
+  }
+  .indexCuatro .portafolio-title {
+    font-size: 10vh;
+  }
+  .indexTres {
+    height: 260vh;
+    margin-top: 0vh;
+  }
+  .indexCuatro {
+    height: 450vh;
+    width: 100%;
+  }
+  .indexCuatro .portafolio {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
+    grid-auto-columns: 1fr;
+    gap: 3px 3px;
+    grid-auto-flow: row;
+    grid-template-areas: "por-uno por-dos" "por-tres por-cuatro" "por-nueve por-ocho" "por-siete por-diez" "por-once por-trece" "por-seis por-cinco" "por-quince por-16" "por-17 por-18";
+  }
+  .indexCuatro .por-uno {
+    grid-area: por-uno;
+  }
+  .indexCuatro .por-dos {
+    grid-area: por-dos;
+  }
+  .indexCuatro .por-tres {
+    grid-area: por-tres;
+  }
+  .indexCuatro .por-cuatro {
+    grid-area: por-cuatro;
+  }
+  .indexCuatro .por-cinco {
+    grid-area: por-cinco;
+  }
+  .indexCuatro .por-seis {
+    grid-area: por-seis;
+  }
+  .indexCuatro .por-siete {
+    grid-area: por-siete;
+  }
+  .indexCuatro .por-ocho {
+    grid-area: por-ocho;
+  }
+  .indexCuatro .por-nueve {
+    grid-area: por-nueve;
+  }
+  .indexCuatro .por-diez {
+    grid-area: por-diez;
+  }
+  .indexCuatro .por-once {
+    grid-area: por-once;
+  }
+  .indexCuatro .por-trece {
+    grid-area: por-trece;
+  }
+  .indexCuatro .por-quince {
+    grid-area: por-quince;
+  }
+  .indexCuatro .por-16 {
+    grid-area: por-16;
+  }
+  .indexCuatro .por-17 {
+    grid-area: por-17;
+  }
+  .indexCuatro .por-18 {
+    grid-area: por-18;
+  }
+  .indexCuatro .foto-portafolio {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
   }
 }
 

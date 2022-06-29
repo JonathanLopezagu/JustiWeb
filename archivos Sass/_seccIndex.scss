@@ -84,9 +84,9 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    
+
     .card {
-        border: 0px solid ;
+        border: 0px solid;
         position: relative;
         cursor: pointer;
 
@@ -105,23 +105,23 @@
             align-items: center;
             z-index: 1;
             transform: translateY(20vh);
-            border-radius:5% 5%  0 0;
+            border-radius: 5% 5% 0 0;
         }
 
-        .content{
+        .content {
             opacity: 0.2;
             transition: 0.5s;
         }
 
-        
-        .card-img{
-            
+
+        .card-img {
+
             max-width: 50%;
             display: flex;
             margin: auto;
         }
 
-        .titulo-card{
+        .titulo-card {
             margin: 10px 0 0;
             padding: 0;
             color: black;
@@ -129,7 +129,7 @@
             font-size: 1.5em;
         }
 
-        .face2{
+        .face2 {
             position: relative;
             background-color: white;
             display: flex;
@@ -137,17 +137,17 @@
             align-items: center;
             padding: 20px;
             box-sizing: border-box;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
             transform: translateY(-20vh);
-            border-radius: 0 0 5% 5% ;
+            border-radius: 0 0 5% 5%;
         }
 
-        .card-parrafo{
+        .card-parrafo {
             margin: 0;
             padding: 0;
         }
 
-        .card-enlace{
+        .card-enlace {
             margin: 15px 0 0;
             display: inline-block;
             text-decoration: none;
@@ -161,23 +161,25 @@
     }
 }
 
-.card:hover .face.face1 .content{
+.card:hover .face.face1 .content {
     opacity: 1;
 }
-.card:hover .face.face2 .content{
+
+.card:hover .face.face2 .content {
     opacity: 1;
 }
 
 
-.card:hover .face1{
+.card:hover .face1 {
     background-color: #FDCEB9;
     transform: translateY(0);
 }
 
-.card:hover .face.face2{
+.card:hover .face.face2 {
     transform: translateY(0);
 }
-.card:hover .face.face2 .card-enlace:hover{
+
+.card:hover .face.face2 .card-enlace:hover {
     background-color: #FDCEB9;
     color: black;
 }
@@ -284,96 +286,237 @@
         height: 50vh;
         object-fit: cover;
     }
+
+
+}
+
+.foto-portafolio:hover {
+    transform: scale(1);
 }
 
 @media (max-width:1024px) and (min-width:768px) {
-    .indexDos{
+    .indexDos {
         height: 100vh;
-        .picture-contain{
+
+        .picture-contain {
             margin-top: 10vh;
         }
-        .cardFoto{
-            .picture-img{
+
+        .cardFoto {
+            .picture-img {
                 //margin-top:20vh;
                 height: 80vh;
             }
         }
 
-        .cardInfo{
-            .titulo-uno{
+        .cardInfo {
+            .titulo-uno {
                 font-size: x-large;
                 color: black;
                 text-shadow: 2px 2px #FDCEB9;
             }
 
-            .subtitulo-uno{
+            .subtitulo-uno {
                 font-size: large;
                 color: black;
                 text-shadow: 2px 2px #FDCEB9;
             }
-            .subtitulo-dos{
+
+            .subtitulo-dos {
                 font-size: large;
                 color: black;
                 text-shadow: 2px 2px #FDCEB9;
             }
-            
-            .parrafo-info{
+
+            .parrafo-info {
                 font-size: small;
                 padding: 0px;
             }
         }
 
     }
-    .indexCuatro{
-        .portafolio-title{
+
+    .indexCuatro {
+        .portafolio-title {
             font-size: 10vh;
-            
+
         }
     }
 }
 
 @media (max-width:767px) and (min-width:576px) {
-    .indexDos{
+    .indexDos {
         height: 115vh;
-        .picture-contain{
+
+        .picture-contain {
             margin-top: 10vh;
         }
-        .cardFoto{
-            .picture-img{
+
+        .cardFoto {
+            .picture-img {
                 //margin-top:20vh;
                 height: 80vh;
             }
         }
 
-        .cardInfo{
-            .titulo-uno{
+        .cardInfo {
+            .titulo-uno {
                 font-size: large;
                 color: black;
                 text-shadow: 2px 2px #FDCEB9;
             }
 
-            .subtitulo-uno{
+            .subtitulo-uno {
                 font-size: large;
                 color: black;
                 text-shadow: 2px 2px #FDCEB9;
             }
-            .subtitulo-dos{
+
+            .subtitulo-dos {
                 font-size: large;
                 color: black;
                 text-shadow: 2px 2px #FDCEB9;
             }
-            
-            .parrafo-info{
+
+            .parrafo-info {
                 font-size: small;
                 padding: 0px;
             }
         }
 
     }
-    .indexCuatro{
-        .portafolio-title{
+
+    .indexCuatro {
+        .portafolio-title {
             font-size: 10vh;
-            
+
         }
+    }
+}
+
+@media (max-width:575px) {
+    .indexDos {
+        height: 190vh;
+
+        .cardFoto {
+            .picture-img {
+                height: 50vh;
+            }
+        }
+
+        .cardInfo {
+            margin-top: 1vh;
+
+            .subtitulo-dos {
+                text-align: center;
+            }
+        }
+    }
+
+    .indexCuatro {
+        .portafolio-title {
+            font-size: 10vh;
+
+        }
+    }
+
+    .indexTres {
+        height: 260vh;
+        margin-top: 0vh;
+        
+    }
+
+    .indexCuatro {
+        height: 450vh;
+        width: 100%;
+
+        .portafolio {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
+            grid-auto-columns: 1fr;
+            gap: 3px 3px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "por-uno por-dos"
+                "por-tres por-cuatro"
+                "por-nueve por-ocho"
+                "por-siete por-diez"
+                "por-once por-trece"
+                "por-seis por-cinco"
+                "por-quince por-16"
+                "por-17 por-18";
+        }
+
+        .por-uno {
+            grid-area: por-uno;
+        }
+
+        .por-dos {
+            grid-area: por-dos;
+        }
+
+        .por-tres {
+            grid-area: por-tres;
+        }
+
+        .por-cuatro {
+            grid-area: por-cuatro;
+        }
+
+        .por-cinco {
+            grid-area: por-cinco;
+        }
+
+        .por-seis {
+            grid-area: por-seis;
+        }
+
+        .por-siete {
+            grid-area: por-siete;
+        }
+
+        .por-ocho {
+            grid-area: por-ocho;
+        }
+
+        .por-nueve {
+            grid-area: por-nueve;
+        }
+
+        .por-diez {
+            grid-area: por-diez;
+        }
+
+        .por-once {
+            grid-area: por-once;
+        }
+
+        .por-trece {
+            grid-area: por-trece;
+        }
+
+        .por-quince {
+            grid-area: por-quince;
+        }
+
+        .por-16 {
+            grid-area: por-16;
+        }
+
+        .por-17 {
+            grid-area: por-17;
+        }
+
+        .por-18 {
+            grid-area: por-18;
+        }
+
+        .foto-portafolio {
+            width: 100%;
+            height: 50vh;
+            object-fit: cover;
+        }
+
     }
 }
