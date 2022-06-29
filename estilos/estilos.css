@@ -22,6 +22,7 @@
   text-decoration: none;
   font-size: x-large;
   color: black;
+  margin-left: 2vw;
 }
 
 .encabezado .barraNav .logo .img-logo {
@@ -145,7 +146,7 @@
 }
 
 .indexUno {
-  margin-top: 1vh;
+  margin-top: 10vh;
   height: 80vh;
   width: 100%;
 }
@@ -1196,5 +1197,41 @@
 
 .footerGeneral .mapaSitio:hover {
   text-decoration: underline 3px coral;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .footerGeneral .imgRedes {
+    margin-top: 3vw;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    width: 8vw;
+    height: 10vh;
+    padding: 0px;
+    border-radius: 0;
+    outline: 0px;
+  }
+  .footerGeneral .imgRedes:hover {
+    outline-offset: 0px;
+    background-color: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .footerGeneral .imgRedes {
+    margin-top: 3vw;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    width: 8vw;
+    height: 10vh;
+    padding: 0px;
+    border-radius: 0;
+    outline: 0px;
+  }
+  .footerGeneral .imgRedes:hover {
+    outline-offset: 0px;
+    background-color: none;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
