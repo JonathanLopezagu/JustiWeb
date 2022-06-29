@@ -1204,6 +1204,12 @@
   }
 }
 
+@media (max-width: 576px) {
+  .sec-Contacto .title span {
+    font-size: 8vh;
+  }
+}
+
 .footerGeneral {
   height: auto;
   width: 100%;
