@@ -405,6 +405,11 @@
   object-fit: cover;
 }
 
+.indexCuatro .foto-portafolio:hover {
+  filter: opacity(0.9);
+  transform: scale(1.05);
+}
+
 .foto-portafolio:hover {
   transform: scale(1);
 }
@@ -618,6 +623,11 @@
   object-fit: cover;
 }
 
+.secDeportes .deportesUno .foto:hover {
+  filter: opacity(0.9);
+  transform: scale(1.05);
+}
+
 .secDeportes .deportesDos {
   height: 150vh;
   width: 100%;
@@ -658,6 +668,11 @@
   object-fit: cover;
 }
 
+.secDeportes .deportesDos .foto:hover {
+  filter: opacity(0.9);
+  transform: scale(1.05);
+}
+
 .secDeportes .deportesTres {
   width: 100%;
   height: 75vh;
@@ -681,6 +696,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.secDeportes .deportesTres .foto:hover {
+  filter: opacity(0.9);
+  transform: scale(1.05);
 }
 
 @media (max-width: 575px) {
@@ -807,6 +827,11 @@
   z-index: 999;
 }
 
+.productoUno .prod-foto:hover {
+  filter: opacity(0.9);
+  transform: scale(1.05);
+}
+
 .productoDos {
   margin-top: 5vh;
   height: 80vh;
@@ -846,6 +871,11 @@
   height: 100%;
   object-fit: cover;
   z-index: 999;
+}
+
+.productoDos .borgan-foto:hover {
+  filter: opacity(0.9);
+  transform: scale(1.05);
 }
 
 .productoTres {
@@ -891,6 +921,11 @@
   height: 100%;
   object-fit: cover;
   z-index: 999;
+}
+
+.productoTres .bartolo-foto:hover {
+  filter: opacity(0.9);
+  transform: scale(1.05);
 }
 
 .productoCuatro {
@@ -949,6 +984,11 @@
   object-fit: cover;
 }
 
+.productoCuatro .flor-foto:hover {
+  filter: opacity(0.9);
+  transform: scale(1.05);
+}
+
 .productoCinco {
   margin-top: 5vh;
   height: 20em;
@@ -976,6 +1016,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.productoCinco .foto-coca:hover {
+  filter: opacity(0.9);
+  transform: scale(1.05);
 }
 
 .productoSeis {
@@ -1016,6 +1061,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.productoSeis .picadas-foto:hover {
+  filter: opacity(0.9);
+  transform: scale(1.05);
 }
 
 .productoSiete {
@@ -1068,6 +1118,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.productoSiete .siete-foto:hover {
+  filter: opacity(0.9);
+  transform: scale(1.05);
 }
 
 .sec-Contacto {

@@ -46,6 +46,10 @@
         height: 100%;
         object-fit: cover;
         z-index: 999;
+        &:hover {
+            filter: opacity(0.9);
+            transform: scale(1.05);
+        }
     }
 }
 
@@ -88,6 +92,11 @@
         height: 100%;
         object-fit: cover;
         z-index: 999;
+
+        &:hover {
+            filter: opacity(0.9);
+            transform: scale(1.05);
+        }
     }
 }
 
@@ -137,6 +146,11 @@
         height: 100%;
         object-fit: cover;
         z-index: 999;
+
+        &:hover {
+            filter: opacity(0.9);
+            transform: scale(1.05);
+        }
     }
 }
 
@@ -198,6 +212,11 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+
+        &:hover {
+            filter: opacity(0.9);
+            transform: scale(1.05);
+        }
     }
 }
 
@@ -228,6 +247,11 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+
+        &:hover {
+            filter: opacity(0.9);
+            transform: scale(1.05);
+        }
     }
 }
 
@@ -273,6 +297,11 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+
+        &:hover {
+            filter: opacity(0.9);
+            transform: scale(1.05);
+        }
     }
 
 }
@@ -331,5 +360,10 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+
+        &:hover {
+            filter: opacity(0.9);
+            transform: scale(1.05);
+        }
     }
 }
