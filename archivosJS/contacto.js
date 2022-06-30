@@ -1,5 +1,6 @@
 let btnEnviar = document.querySelector('.botonEnviar');
 
+
 btnEnviar.addEventListener('click', (e) => {
     e.preventDefault();
     swal("Enviado", "Datos enviados, nos comunicaremos contigo", "success");
@@ -21,3 +22,5 @@ btnEnviar3.addEventListener('click', (e) => {
     swal("Enviado", "Datos enviados, nos comunicaremos contigo", "success");
 
 });
+
+

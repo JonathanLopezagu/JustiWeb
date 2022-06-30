@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Agregamos SEO-->
+    <meta name="description" content="
+        Justina Palet Fotografa">
+    <meta name="keywords" content="Justins, Palet , Justina Palet, Fotografia, Bodas, Deportes, FotoProductos">
     <!-- Link de Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -63,72 +67,76 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="input-group">
-                                <span class="input-group-text">Nombre de la Novia</span>
-                                <input type="text" aria-label="First name" class="form-control">
-                                <input type="text" aria-label="Last name" class="form-control">
+                        <form class="formulario" action="submit">
+                            <div class="accordion-body">
+                                <div class="input-group">
+                                    <span class="input-group-text">Nombre de la Novia</span>
+                                    <input type="text" aria-label="First name" class="form-control">
+                                    <input type="text" aria-label="Last name" class="form-control">
+                                </div>
+                                <br>
+                                <div class="input-group">
+                                    <span class="input-group-text">Nombre del Novio</span>
+                                    <input type="text" aria-label="First name" class="form-control">
+                                    <input type="text" aria-label="Last name" class="form-control">
+                                </div>
+                                <br>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Agrega un correo de
+                                        contacto de
+                                        contacto</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="name@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput" class="form-label">Ubicacion del evento</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">Fecha del evento</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">¿Cuantos invitados esperas
+                                        aproximadamente?</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                                </div>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>¿Sera durante el dia o la noche?</option>
+                                    <option value="1">Dia</option>
+                                    <option value="2">Noche</option>
+                                </select>
+                                <br>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>¿Ceremonia religiosa o simbolica?</option>
+                                    <option value="1">Religiosa</option>
+                                    <option value="2">Simbolica</option>
+                                </select>
+                                <br>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>¿Viste algun registro de una boda completa?</option>
+                                    <option value="1">SI, CONOZCO TU REGISTRO </option>
+                                    <option value="2">NO, SOLO LINK DE CONTACTO</option>
+                                    <option value="3">ME GUSTARÍA VER UNA BODA COMPLETO</option>
+                                </select>
+                                <br>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>¿como me encontraron?</option>
+                                    <option value="1">INSTAGRAM</option>
+                                    <option value="2">FACEBOOK</option>
+                                    <option value="3">GOOGLE</option>
+                                    <option value="4">RECOMENDACIÓN</option>
+                                    <option value="5">PÁGINA WEB</option>
+                                </select>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">¿Por que les gustaria
+                                        que yo
+                                        registre su boda? ¿Te gusto algun trabajo publicado en esta Web?</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <button class="botonEnviar"> Enviar </button>
                             </div>
-                            <br>
-                            <div class="input-group">
-                                <span class="input-group-text">Nombre del Novio</span>
-                                <input type="text" aria-label="First name" class="form-control">
-                                <input type="text" aria-label="Last name" class="form-control">
-                            </div>
-                            <br>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Agrega un correo de contacto de
-                                    contacto</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="name@example.com">
-                            </div>
-                            <div class="mb-3">
-                                <label for="formGroupExampleInput" class="form-label">Ubicacion del evento</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
-                            </div>
-                            <div class="mb-3">
-                                <label for="formGroupExampleInput2" class="form-label">Fecha del evento</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-                            </div>
-                            <div class="mb-3">
-                                <label for="formGroupExampleInput2" class="form-label">¿Cuantos invitados esperas
-                                    aproximadamente?</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-                            </div>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>¿Sera durante el dia o la noche?</option>
-                                <option value="1">Dia</option>
-                                <option value="2">Noche</option>
-                            </select>
-                            <br>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>¿Ceremonia religiosa o simbolica?</option>
-                                <option value="1">Religiosa</option>
-                                <option value="2">Simbolica</option>
-                            </select>
-                            <br>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>¿Viste algun registro de una boda completa?</option>
-                                <option value="1">SI, CONOZCO TU REGISTRO </option>
-                                <option value="2">NO, SOLO LINK DE CONTACTO</option>
-                                <option value="3">ME GUSTARÍA VER UNA BODA COMPLETO</option>
-                            </select>
-                            <br>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>¿como me encontraron?</option>
-                                <option value="1">INSTAGRAM</option>
-                                <option value="2">FACEBOOK</option>
-                                <option value="3">GOOGLE</option>
-                                <option value="4">RECOMENDACIÓN</option>
-                                <option value="5">PÁGINA WEB</option>
-                            </select>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">¿Por que les gustaria que yo
-                                    registre su boda? ¿Te gusto algun trabajo publicado en esta Web?</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <button class="botonEnviar"> Enviar </button>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -140,72 +148,78 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
+
                         <div class="accordion-body">
-                            <div class="input-group">
-                                <span class="input-group-text">Nombre de contacto</span>
-                                <input type="text" aria-label="First name" class="form-control">
-                                <input type="text" aria-label="Last name" class="form-control">
-                            </div>
-                            <br>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Agrega un correo de contacto de
-                                    contacto</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="name@example.com">
-                            </div>
-                            <div class="mb-3">
-                                <label for="formGroupExampleInput2" class="form-label">¿Cual es la fecha del
-                                    evento?</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-                            </div>
-                            <div class="mb-3">
-                                <label for="formGroupExampleInput2" class="form-label">¿Cual sera la ubicacion del
-                                    evento?</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-                            </div>
-                            <div class="mb-3">
-                                <label for="formGroupExampleInput2" class="form-label">¿Cuantos participantes esperas
-                                    aproximadamente?</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-                            </div>
-                            <div class="mb-3">
-                                <label for="formGroupExampleInput2" class="form-label">¿Duracion aproximada del
-                                    evento?</label>
-                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-                            </div>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>¿Sera durante el dia o la noche?</option>
-                                <option value="1">Dia</option>
-                                <option value="2">Noche</option>
-                            </select>
-                            <br>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>¿Se fotografiaria la premiacion?</</option> <option value="1">Si
-                                </option>
-                                <option value="2">No</option>
-                            </select>
-                            <br>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>¿Viste algun registro de evento deportivo completo?</option>
-                                <option value="1">SI, CONOZCO TU REGISTRO </option>
-                                <option value="2">NO, SOLO LINK DE CONTACTO</option>
-                                <option value="3">ME GUSTARÍA VER UNA BODA COMPLETO</option>
-                            </select>
-                            <br>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>¿Como me encontraron?</option>
-                                <option value="1">INSTAGRAM</option>
-                                <option value="2">FACEBOOK</option>
-                                <option value="3">GOOGLE</option>
-                                <option value="4">RECOMENDACIÓN</option>
-                                <option value="5">PÁGINA WEB</option>
-                            </select>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">¿Por que les gustaria que yo
-                                    registre su evento? ¿Te gusto algun trabajo publicado en esta Web?</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <button class="botonEnviar2"> Enviar </button>
+                            <form class="formulario" action="submit">
+                                <div class="input-group">
+                                    <span class="input-group-text">Nombre de contacto</span>
+                                    <input type="text" aria-label="First name" class="form-control">
+                                    <input type="text" aria-label="Last name" class="form-control">
+                                </div>
+                                <br>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Agrega un correo de
+                                        contacto de
+                                        contacto</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="name@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">¿Cual es la fecha del
+                                        evento?</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">¿Cual sera la ubicacion del
+                                        evento?</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">¿Cuantos participantes
+                                        esperas
+                                        aproximadamente?</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">¿Duracion aproximada del
+                                        evento?</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                                </div>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>¿Sera durante el dia o la noche?</option>
+                                    <option value="1">Dia</option>
+                                    <option value="2">Noche</option>
+                                </select>
+                                <br>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>¿Se fotografiaria la premiacion?</</option> <option value="1">Si
+                                    </option>
+                                    <option value="2">No</option>
+                                </select>
+                                <br>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>¿Viste algun registro de evento deportivo completo?</option>
+                                    <option value="1">SI, CONOZCO TU REGISTRO </option>
+                                    <option value="2">NO, SOLO LINK DE CONTACTO</option>
+                                    <option value="3">ME GUSTARÍA VER UNA BODA COMPLETO</option>
+                                </select>
+                                <br>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>¿Como me encontraron?</option>
+                                    <option value="1">INSTAGRAM</option>
+                                    <option value="2">FACEBOOK</option>
+                                    <option value="3">GOOGLE</option>
+                                    <option value="4">RECOMENDACIÓN</option>
+                                    <option value="5">PÁGINA WEB</option>
+                                </select>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">¿Por que les gustaria
+                                        que yo
+                                        registre su evento? ¿Te gusto algun trabajo publicado en esta Web?</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <button class="botonEnviar2"> Enviar </button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -303,10 +317,10 @@
                         <a class="mapaSitio" href="./fotoProductos.html"> FOTOPRODUCTOS</a>
                         <a class="mapaSitio" href="./contacto.html"> CONTACTO</a>
                     </section>
-                    
+
                     <a class="redLink" href="https://www.instagram.com/justinsph/" target="_Blank"> <img
                             class="imgRedes" src="../multimedia/iconos/instagram (2).png" alt="redSocial.2"> </a>
-                    
+
                 </div>
             </footer>
 
