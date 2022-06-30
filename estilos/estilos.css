@@ -1210,6 +1210,125 @@
   }
 }
 
+.boda-Uno {
+  display: grid;
+  height: 200vh;
+  margin-top: 10vh;
+  grid-template-columns: 25% 25% 24% 24%;
+  grid-template-rows: 33% 34% 33%;
+  grid-auto-columns: 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas: "foto-boda foto-boda title-boda title-boda" "foto-boda foto-boda foto-boda2 foto-boda3" "foto-boda6 foto-boda5 foto-boda7 foto-boda4";
+}
+
+.boda-Uno .foto-boda {
+  grid-area: foto-boda;
+}
+
+.boda-Uno .title-boda {
+  grid-area: title-boda;
+  text-align: center;
+  color: #FDCEB9;
+  text-shadow: 2px 2px red;
+}
+
+.boda-Uno .title-boda p {
+  color: black;
+  text-shadow: none;
+  text-align: justify;
+}
+
+.boda-Uno .foto-boda2 {
+  grid-area: foto-boda2;
+}
+
+.boda-Uno .foto-boda3 {
+  grid-area: foto-boda3;
+}
+
+.boda-Uno .foto-boda4 {
+  grid-area: foto-boda4;
+}
+
+.boda-Uno .foto-boda5 {
+  grid-area: foto-boda5;
+}
+
+.boda-Uno .foto-boda6 {
+  grid-area: foto-boda6;
+}
+
+.boda-Uno .foto-boda7 {
+  grid-area: foto-boda7;
+}
+
+.boda-Uno .img-boda {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.boda-Uno .img-boda:hover {
+  filter: opacity(0.9);
+  transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .boda-Uno {
+    display: grid;
+    height: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80vh 60vh 50vh 50vh 50vh;
+    grid-auto-columns: 1fr;
+    gap: 3px 3px;
+    grid-auto-flow: row;
+    grid-template-areas: "foto-boda foto-boda" "title-boda title-boda" "foto-boda2 foto-boda3" "foto-boda4 foto-boda5" "foto-boda6 foto-boda7";
+  }
+  .foto-boda {
+    grid-area: foto-boda;
+    background-color: red;
+  }
+  .title-boda {
+    grid-area: title-boda;
+    background-color: red;
+    font-size: small;
+  }
+  .foto-boda2 {
+    grid-area: foto-boda2;
+    background-color: red;
+  }
+  .foto-boda3 {
+    grid-area: foto-boda3;
+    background-color: red;
+  }
+  .foto-boda4 {
+    grid-area: foto-boda4;
+    background-color: red;
+  }
+  .foto-boda5 {
+    grid-area: foto-boda5;
+    background-color: red;
+  }
+  .foto-boda6 {
+    grid-area: foto-boda6;
+    background-color: red;
+  }
+  .foto-boda7 {
+    grid-area: foto-boda7;
+    background-color: red;
+  }
+  .img-boda {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .img-boda:hover {
+    filter: opacity(0.9);
+    transform: scale(1.05);
+  }
+}
+
 .footerGeneral {
   height: auto;
   width: 100%;
